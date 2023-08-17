@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="0dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardBackgroundColor="?attr/cardBackgroundColor"
+    app:contentPadding="0dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10sp">
+
+        <ImageView
+            android:id="@+id/channel_item_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:contentDescription="@string/favorites"
+            android:padding="@dimen/_1sdp"
+            android:elevation="8dp"
+            android:layout_margin="10sp"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_item_fav"
+            tools:visibility="visible" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8sp"
+            app:cardElevation="4sp">
+
+            <ImageView
+                android:id="@+id/channel_item_image"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/channel_thumbnail"
+                android:padding="10sp"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/channel_item_name"
+            style="@style/TextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins"
+            android:maxLines="2"
+            android:includeFontPadding="false"
+            android:textSize="16sp"
+            android:layout_below="@id/card"
+            tools:text="@tools:sample/lorem[6]" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

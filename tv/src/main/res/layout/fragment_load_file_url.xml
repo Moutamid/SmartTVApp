@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.fragments.loadfile.LoadFileAndUrlFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/tv_m3u_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/https_example_com_file_m3u"
+            android:imeOptions="flagNoFullscreen"
+            android:inputType="textUri"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textColorHint="#fff"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/radioButtonsGroup"
+            app:layout_constraintTop_toBottomOf="@+id/radioButtonsGroup"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/playlist_type"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            app:layout_constraintBottom_toBottomOf="@+id/radioButtonsGroup"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/radioButtonsGroup" />
+
+        <EditText
+            android:id="@+id/tv_playlist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="@string/any_name"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textPersonName"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textColorHint="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/file_url"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_m3u_url"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="@+id/tv_m3u_url" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="100dp"
+            android:text="@string/playlist_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_playlist_name"
+            app:layout_constraintEnd_toStartOf="@+id/tv_playlist_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_playlist_name" />
+
+        <RadioGroup
+            android:id="@+id/radioButtonsGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/tv_playlist_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_playlist_name">
+
+            <RadioButton
+                android:id="@+id/radbtnFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:checked="true"
+                android:text="@string/file" />
+
+            <RadioButton
+                android:id="@+id/radBtnUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m3u_url" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_all_plylists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/all_playlists"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tv_m3u_url"
+            app:layout_constraintHorizontal_bias="0.294"
+            app:layout_constraintStart_toStartOf="@+id/tv_m3u_url"
+            app:layout_constraintTop_toBottomOf="@+id/tv_m3u_url"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_add_plylist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_playlist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_all_plylists"
+            app:layout_constraintEnd_toStartOf="@+id/btn_all_plylists"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/btn_all_plylists" />
+
+        <Button
+            android:id="@+id/btn_browser_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/browser"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_m3u_url"
+            app:layout_constraintEnd_toEndOf="@+id/tv_m3u_url"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_m3u_url"
+            app:layout_constraintTop_toTopOf="@+id/tv_m3u_url" />
+
+        <TextView
+            android:id="@+id/tvSelectedFilePath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollbarFadeDuration="100"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_browser_file"
+            app:layout_constraintEnd_toEndOf="@+id/tv_m3u_url"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/btn_browser_file"
+            app:layout_constraintTop_toTopOf="@+id/btn_browser_file" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

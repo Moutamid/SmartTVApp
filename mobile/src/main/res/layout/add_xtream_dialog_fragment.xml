@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12sp"
+    app:cardCornerRadius="12sp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins"
+            android:includeFontPadding="false"
+            android:gravity="center"
+            android:text="@string/please_enter_your_xtream_account_details_to_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:boxStrokeWidth="0sp"
+            app:boxCornerRadiusTopEnd="8sp"
+            app:boxCornerRadiusTopStart="8sp"
+            app:boxCornerRadiusBottomStart="8sp"
+            app:boxCornerRadiusBottomEnd="8sp"
+            app:boxStrokeColor="@color/blueee"
+            android:hint="@string/anya_name"
+            app:boxBackgroundColor="?attr/cardBackgroundColor"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/blueee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/xtream_any_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorOnSecondary"
+                android:ems="15"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:boxStrokeWidth="0sp"
+            app:boxCornerRadiusTopEnd="8sp"
+            app:boxCornerRadiusTopStart="8sp"
+            app:boxCornerRadiusBottomStart="8sp"
+            app:boxCornerRadiusBottomEnd="8sp"
+            app:boxStrokeColor="@color/blueee"
+            app:boxBackgroundColor="?attr/cardBackgroundColor"
+            app:hintTextColor="@color/blueee"
+            app:helperText="Your xtream server url"
+            app:helperTextTextColor="#E53935"
+            app:hintEnabled="true"
+            android:hint="@string/http_www_example_com_port"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/xtream_account_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="15"
+                android:textColor="?attr/colorOnSecondary"
+                android:importantForAutofill="no"
+                android:inputType="textUri" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:boxStrokeWidth="0sp"
+            app:boxCornerRadiusTopEnd="8sp"
+            app:boxCornerRadiusTopStart="8sp"
+            app:boxCornerRadiusBottomStart="8sp"
+            app:boxCornerRadiusBottomEnd="8sp"
+            app:boxStrokeColor="@color/blueee"
+            android:hint="@string/username"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/blueee"
+            android:inputType="textPersonName"
+            app:boxBackgroundColor="?attr/cardBackgroundColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/xtream_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorOnSecondary"
+                android:autofillHints="@string/username"
+                android:ems="15"
+                android:inputType="textPersonName"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextTextPersonName4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:boxStrokeWidth="0sp"
+            app:boxCornerRadiusTopEnd="8sp"
+            app:boxCornerRadiusTopStart="8sp"
+            app:boxCornerRadiusBottomStart="8sp"
+            app:boxCornerRadiusBottomEnd="8sp"
+            app:boxStrokeColor="@color/blueee"
+            android:hint="@string/password"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/blueee"
+            app:boxBackgroundColor="?attr/cardBackgroundColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/xtream_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorOnSecondary"
+                android:autofillHints="@string/password"
+                android:ems="15"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_login_xtream"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/blueee"
+            android:ems="10"
+            android:text="@string/login"
+            android:fontFamily="@font/poppins"
+            android:includeFontPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

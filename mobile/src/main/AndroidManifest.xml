@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ixidev.mobile">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application>
+        <activity
+            android:name=".ui.SubscribeActivity"
+            android:theme="@style/Theme.Mobile"
+            android:exported="false" />
+        <activity
+            android:name=".ui.playlistparser.PlayListParserActivity"
+            android:theme="@style/Theme.Mobile" />
+        <activity
+            android:name=".ui.main.MobileMainActivity"
+            android:theme="@style/Theme.Mobile" /> <!-- suppress AndroidDomInspection -->
+        <activity
+            android:name=".ui.player.MobilePlayerActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:launchMode="singleTask"
+            android:supportsPictureInPicture="true"
+            android:theme="@style/PlayerTheme"
+            tools:targetApi="n" />
+        <activity
+            android:name=".ui.MobileSplashActivity"
+            android:exported="false"></activity>
+
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:parentActivityName=".ui.main.MobileMainActivity"
+            android:theme="@style/Theme.Mobile" />
+    </application>
+
+</manifest>

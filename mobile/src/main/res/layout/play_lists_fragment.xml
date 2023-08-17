@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="?attr/colorPrimaryVariant"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/mobile_playlist_item_layout" />
+
+    <LinearLayout
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/btn_bg"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingHorizontal="15sp"
+        android:paddingVertical="10sp"
+        android:gravity="center_vertical"
+        android:backgroundTint="@color/blueee">
+
+        <ImageView
+            android:layout_width="28sp"
+            android:layout_height="28sp"
+            android:src="@drawable/round_add_24"
+            android:layout_marginEnd="6sp"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:gravity="start|center"
+            android:padding="10sp"
+            android:text="Add New"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/playListText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_playlists_add_new_one"
+        android:textSize="18sp"
+        android:drawablePadding="10dp"
+        app:drawableTint="?attr/colorPrimaryDark"
+        android:drawableTop="@drawable/ic_no_playlists"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

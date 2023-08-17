@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <string name="title_activity_auth">Smart IPTV</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="browser">Browser</string>
+    <string name="https_example_com_file_m3u">https://example.com/file.m3u</string>
+    <string name="playlist_type">PlayList Type</string>
+    <string name="any_name">Any Name</string>
+    <string name="file_url">File / URL</string>
+    <string name="playlist_name">PlayList Name</string>
+    <string name="file">File</string>
+    <string name="m3u_url">M3U URL</string>
+    <string name="playlist_name_error_message">Please enter Playlist name</string>
+    <string name="m3u_url_error_message">Please enter a valid url !</string>
+    <string name="select_file_error_message">Please select file</string>
+    <string name="file_path_empty_error_massage">File path empty try another File !</string>
+    <string name="add_playlist">Add PlayList</string>
+    <string name="all_playlists">All PlayLists</string>
+    <string name="playlist_image">PlayList Image</string>
+    <string name="all_categories">All Categories</string>
+    <string name="movie_image">Movie image</string>
+    <string name="load_playlist_or_file_url">Load Playlist Or File/URL</string>
+    <string name="list_users">List Users</string>
+    <string name="play_single_stream">Play Single Stream</string>
+    <string name="login_with_xtream_codes_api">Login with Xtream Codes API</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="http_www_example_com_8080">http://www.example.com:8080</string>
+    <string name="enter_your_login_details">Enter Your Login Details</string>
+    <string name="add_user">Add User</string>
+    <string name="username_error_message">Please enter username</string>
+    <string name="password_error_message">Please Enter Password</string>
+    <string name="xtream_url_error_message">Please enter a valid Xtream URL</string>
+    <string name="loading">Loading…</string>
+</resources>

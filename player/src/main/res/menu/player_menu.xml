@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/media_route_menu_item"
+        android:title="@string/media_route_menu_title"
+        app:actionProviderClass="androidx.mediarouter.app.MediaRouteActionProvider"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_track_info"
+        android:icon="@drawable/ic_track_info"
+        android:title="@string/track_info"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/item_pic_in_pic"
+        android:icon="@drawable/ic_player_picture_in_picture"
+        android:title="@string/picture_in_picture"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/item_menu_list"
+        android:icon="@drawable/ic_player_menu_list_item"
+        android:title="@string/media_list"
+        app:showAsAction="always" />
+</menu>

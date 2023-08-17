@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnLoadFile" type="id" />
+    <item name="btnAllUsers" type="id" />
+    <item name="btnLoginXtream" type="id" />
+    <item name="imageView7" type="id" />
+</resources>

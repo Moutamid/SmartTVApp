@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TvTheme" parent="@style/Theme.Leanback" />
+
+    <style name="TvTheme.FullScreen" parent="TvTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AuthTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+    </style>
+
+    <!-- Text in the action bar at the top of the screen -->
+
+</resources>

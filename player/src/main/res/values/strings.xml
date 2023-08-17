@@ -1,0 +1,16 @@
+<resources>
+    <string name="live">Live</string>
+    <string name="track_selection_title">Select tracks</string>
+    <string name="player_network_error_message">Please check your  network connection</string>
+    <string name="picture_in_picture">Picture in picture</string>
+    <string name="media_list">Media List</string>
+    <string name="track_info">Track info</string>
+    <string name="search_for_channel">Search for channel</string>
+    <string name="permissions_needed">Permissions needed</string>
+    <string name="enable">Enable</string>
+    <string name="cancel">Cancel</string>
+    <string name="picture_in_picture_disabled_message">Pic-in-Pic is disabled.\nPlease enabled to continue</string>
+    <string name="pic_in_pic_not_supported">Maybe Picture-in-Picture not supported on your device</string>
+    <string name="media_route_menu_title">Cast</string>
+    <string name="app_id">97F102C2</string>
+</resources>

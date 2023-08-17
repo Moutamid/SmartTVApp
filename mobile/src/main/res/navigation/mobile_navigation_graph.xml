@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_graph"
+    android:label="@string/home"
+    app:startDestination="@id/homeFragment">
+
+    <include app:graph="@navigation/aboutlibs_navigation" />
+    <action
+        android:id="@+id/action_about_app"
+        app:destination="@id/about_libraries" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ixidev.mobile.ui.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/home_fragment" />
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.ixidev.mobile.ui.favoriets.FavoritesFragment"
+        android:label="@string/favorites"
+        tools:layout="@layout/favorites_fragment" />
+    <fragment
+        android:id="@+id/playListsFragment"
+        android:name="com.ixidev.mobile.ui.playlists.PlayListsFragment"
+        android:label="@string/label_playlists"
+        tools:layout="@layout/play_lists_fragment" />
+    <dialog
+        android:id="@+id/addPlayListBottomDialog"
+        android:name="com.ixidev.mobile.ui.addfiledialog.AddPlayListBottomDialog"
+        android:label="@string/add_new_playlist"
+        tools:layout="@layout/add_playlist_dialog_fragment" >
+    </dialog>
+    <dialog
+        android:id="@+id/addM3uUrlDialog"
+        android:name="com.ixidev.mobile.ui.addfiledialog.AddM3uUrlDialog"
+        android:label="AddM3uUrlDialog"
+        tools:layout="@layout/add_m3u_url_dialog_fragment" />
+    <dialog
+        android:id="@+id/addXtreamAccountDialog"
+        android:name="com.ixidev.mobile.ui.addfiledialog.AddXtreamAccountDialog"
+        android:label="AddXtreamAccountDialog"
+        tools:layout="@layout/add_xtream_dialog_fragment" />
+    <activity
+        android:id="@+id/playListParserActivity"
+        android:name="com.ixidev.mobile.ui.playlistparser.PlayListParserActivity"
+        tools:layout="@layout/activity_play_list_parser" />
+
+    <action
+        android:id="@+id/actionParseUri"
+        app:destination="@id/playListParserActivity"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/playListsFragment" />
+    <activity
+        android:id="@+id/settingsActivity"
+        android:name="com.ixidev.mobile.ui.settings.SettingsActivity"
+        android:label="@string/settings"
+        tools:layout="@layout/activity_settings" />
+    <action
+        android:id="@+id/action_open_settings"
+        app:destination="@id/settingsActivity"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/homeFragment" />
+</navigation>

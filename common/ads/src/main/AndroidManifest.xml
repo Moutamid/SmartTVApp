@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ixidev.smarttvapp.ads">
+
+    <application>
+        <provider
+            android:name=".GDPRInitializer"
+            android:authorities="${applicationId}.GDPRInitializer"
+            android:exported="false" />
+        <provider
+            android:name=".FbInitializer"
+            android:authorities="${applicationId}.FbInitializer"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id"/>
+
+    </application>
+</manifest>

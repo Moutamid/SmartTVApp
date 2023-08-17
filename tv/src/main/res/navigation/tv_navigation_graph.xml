@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_home">
+
+    <action
+        android:id="@+id/action_show_play_lists"
+        app:destination="@id/navigation_all_play_lists"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/navigation_home" />
+
+    <action
+        android:id="@+id/action_add_play_list"
+        app:destination="@id/navigation_add_play_list"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/navigation_home" />
+
+    <action
+        android:id="@+id/action_show_error"
+        app:destination="@id/errorFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/navigation_home" />
+
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.ixidev.tv.ui.auth.fragments.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_all_play_lists"
+        android:name="com.ixidev.tv.ui.playlists.AllPlayListsFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_all_play_lists">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_play_list"
+        android:name="com.ixidev.tv.ui.auth.fragments.loadfile.LoadFileAndUrlFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_load_file_url" />
+    <fragment
+        android:id="@+id/errorFragment"
+        android:name="com.ixidev.tv.ErrorFragment"
+        android:label="Something wrong">
+        <argument
+            android:name="errorMessage"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieListCategoriesFragment"
+        tools:layout="@layout/fragment_movie_list_categories"
+        android:name="com.ixidev.tv.ui.categories.MovieListCategoriesFragment"
+        android:label="MovieListCategoriesFragment" >
+        <argument
+            android:name="listId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_listMoviesFragment"
+        tools:layout="@layout/fragment_list_movies"
+        android:name="com.ixidev.tv.ui.listmovies.ListMoviesFragment"
+        android:label="ListMoviesFragment" >
+
+       <argument
+           android:name="listId"
+           app:argType="integer"
+           />
+
+        <argument
+           android:name="category"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="All" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_xtream_account_login"
+        android:id="@+id/navigation_login_xtream_codes"
+        android:name="com.ixidev.tv.ui.auth.fragments.loadfile.LoadXtreamAccountFragment"
+        android:label="LoadXtreamAccountFragment" />
+    <fragment
+        android:id="@+id/fileParserFragment"
+        android:name="com.ixidev.tv.ui.fileparser.FileParserFragment"
+        android:label="Load File" />
+</navigation>
