@@ -83,7 +83,8 @@ dependencies {
     implementation("com.mikepenz:aboutlibraries:8.8.5")
 
     // Yodo1
-    implementation ("com.yodo1.mas:full:4.8.9") {
+//    implementation ("com.yodo1.mas:full:4.8.9") {
+    implementation ("com.yodo1.mas:full:4.9.2") {
         exclude (group= "com.google.android.exoplayer", module= "exoplayer")
        // exclude (group= "com.yandex.android")
     }
