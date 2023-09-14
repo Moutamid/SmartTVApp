@@ -16,8 +16,8 @@ android {
         applicationId = AppConfig.APP_PACKAGE_NAME
         minSdk = Deps.minSdkVersion
         targetSdk = Deps.targetSdkVersion
-        versionCode = 713770 //AppConfig.APP_VERSION_CODE
-        versionName = "0.0.5.2" //AppConfig.APP_VERSION_NAME
+        versionCode = 713771 //AppConfig.APP_VERSION_CODE
+        versionName = "0.0.5.3" //AppConfig.APP_VERSION_NAME
         testInstrumentationRunner = "com.ixidev.smarttvaapp.AppTestsRunner"
         multiDexEnabled = true
         resourceConfigurations += setOf("en")
